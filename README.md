@@ -54,7 +54,7 @@ public
 |
 app
 └───src
-│	│
+│   |
 └───|───client
 │   │   │   index.js
 │   │   │   Page.js
