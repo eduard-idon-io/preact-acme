@@ -6,7 +6,7 @@ const distRoot = Path.resolve('public');
 const PrerenderSpaPlugin = require('prerender-spa-plugin');
 
 module.exports = merge({
-  entry: Path.resolve('src/client/index.js'),
+  entry: Path.resolve('app/src/client/index.js'),
   output: {
     path: distRoot,
     filename: '[name].bundle.js',

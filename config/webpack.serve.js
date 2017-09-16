@@ -3,7 +3,7 @@ const path = require('path');
 const distRoot = path.resolve('functions');
 
 module.exports = {
-    entry: path.resolve('src/server/index.js'),
+    entry: path.resolve('app/src/server/index.js'),
     output: {
       path: distRoot,
       filename: 'index.js', // <-- Important

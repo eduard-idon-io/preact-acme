@@ -5,7 +5,7 @@ const common = require('./webpack.common.js');
 const distRoot = path.resolve('public');
 
 module.exports = merge({
-  entry: path.resolve('src/client/index.js'),
+  entry: path.resolve('app/src/client/index.js'),
   output: {
     path: distRoot,
     filename: '[name].bundle.js',
