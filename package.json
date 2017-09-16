@@ -12,6 +12,7 @@
     "server": "webpack --config config/webpack.serve.js"
   },
   "devDependencies": {
+    "url-loader": "^0.5.9",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",

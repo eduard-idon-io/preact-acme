@@ -11,15 +11,12 @@ module.exports = merge({
     filename: '[name].bundle.js',
     publicPath: '/'
   }
-}, common, {
+},
+common,
+{
   devtool: 'inline-source-map',
   devServer: {
     contentBase: distRoot,
     hot: true
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: "PreactJS Acme"
-    })
-  ]
+  }
 })

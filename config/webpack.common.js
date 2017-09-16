@@ -22,19 +22,20 @@ module.exports = {
               test: /\.css$/,
               use: [
                 'style-loader',
-                'css-loader'
+                'css-loader',
+                'resolve-url-loader'
               ]
             },
             {
               test: /\.(png|svg|jpg|gif)$/,
               use: [
-                'file-loader'
+                'url-loader'
               ]
             },
             {
               test: /\.(woff|woff2|eot|ttf|otf)$/,
               use: [
-                'file-loader'
+                'url-loader'
               ]
             },
             {
@@ -52,6 +53,10 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: [ '.js', '.jsx' ]
+      alias: {
+        '~': path.resolve('app/'),
+        'src': path.resolve('app/src/')
+      },
+      extensions: [ '.js', '.jsx' ]
     }
 };

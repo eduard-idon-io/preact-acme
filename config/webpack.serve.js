@@ -23,6 +23,10 @@ module.exports = {
         ]
     },
     resolve: {
+        alias: {
+            '~': resolve('app'),
+            '@': resolve('app/src')
+        },
         extensions: [ '.js', '.jsx' ]
     },
     externals: [nodeExternals()] // <-- Important
