@@ -54,11 +54,10 @@ public
 |
 app
 └───src
-│
+│	│
 └───|───client
 │   │   │   index.js
 │   │   │   Page.js
-│
 └───|───server
 │   │   │   index.js
 │   │   │   Page.js
