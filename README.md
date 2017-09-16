@@ -52,14 +52,16 @@ public
 │   404.html
 │   index.html
 |
-src
-└───client
-│   │   index.js
-│   │   Page.js
-│   
-└───server
-│   │   index.js
-│   │   Page.js
-│   
+app
+└───src
+│
+└───|───client
+│   │   │   index.js
+│   │   │   Page.js
+│
+└───|───server
+│   │   │   index.js
+│   │   │   Page.js
+│
 package.json
 ```
