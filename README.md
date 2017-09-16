@@ -10,8 +10,8 @@ Sitio construido con la PreactJS para firebase functions &amp; hosting
 
 1. Clonar el repositorio
 2. Instalar las siguientes herramientas:
-	Yarn: yarn o yarn install
-	NPM: npm i
+	Yarn: ```yarn o yarn install
+	NPM: ```npm i
 3. Correr los siguientes comandos, sin sobre escribir el archivo 'package.json':
 	firebase init hosting
 	firebase init functions
