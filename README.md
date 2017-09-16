@@ -9,24 +9,31 @@ Sitio construido con la PreactJS para firebase functions &amp; hosting
 ## Instalación
 
 1. Clonar el repositorio
-2. Yarn: yarn o yarn install
-   NPM: npm i
-3. correr el comando: firebase init functions,hosting
-4. instalar dentro de la carpeta funcions:
-	Yarn: yarn add preact-render-to-string
-	NPM: npm i -S preact-render-to-string
+2. Instalar las siguientes herramientas:
+	Yarn: yarn o yarn install
+	NPM: npm i
+3. Correr los siguientes comandos, sin sobre escribir el archivo 'package.json':
+	firebase init hosting
+	firebase init functions
+	3.1. Si sobreescribio el archivo package.json debe instalar las siguientes dependencias:
+		Yarn: yarn add express preact preact-render-to-string
+		NPM: npm i -S express preact preact-render-to-string
 
 ## USO
 
-* Para poder arrangar el lado del cliente solo debe correr el siguiente comando
-	Yarn: yarn start
-	NPM: npm start
+* Para poder arrangar el servidor del lado del cliente:
+	Yarn: yarn run dev
+	NPM: npm run dev
 
-* Para generar los bundles tanto del lado del cliente como del servidor debe correr el siguiente commando
+* Para generar los bundles tanto del lado del cliente:
 	Yarn: yarn run build
 	NPM: npm run build
 
-* Para poder probar las funciones creadas en firebase cloud debe correr el siguiente comando
+* Para generar los bundles tanto del lado del servidor:
+	Yarn: yarn run server
+	NPM: npm run server
+
+* Para poder probar las funciones creadas en firebase debe correr el siguiente comando:
 	firebase serve --only functions,hosting
 
 ## Estructura
