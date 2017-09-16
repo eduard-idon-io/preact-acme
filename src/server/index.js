@@ -6,7 +6,7 @@ import Page from './Page'
 const functions = require('firebase-functions');
 const app = express();
 
-app.get('/api', (req, res) => {
+app.get('/page', (req, res) => {
 	let html = render(<Page />);
 
   res.send(`<!DOCTYPE html>${html}`);

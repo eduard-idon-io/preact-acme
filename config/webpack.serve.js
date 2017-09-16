@@ -1,19 +1,29 @@
 const nodeExternals = require('webpack-node-externals');
 const path = require('path');
-const merge = require('webpack-merge');
-const common = require('./webpack.common.js');
 const distRoot = path.resolve('functions');
 
-module.exports = merge({
-    entry: path.resolve('functions/src/index.js'),
+module.exports = {
+    entry: path.resolve('src/server/index.js'),
     output: {
       path: distRoot,
       filename: 'index.js', // <-- Important
       libraryTarget: 'this' // <-- Important
     },
-    target: 'node', // <-- Important,
+    target: 'node', // <-- Important
+    module: {
+        loaders: [
+            {
+                test: /.jsx?$/,
+                loader: 'babel-loader',
+                exclude: /node_modules/,
+                query: {
+                    presets: ['es2015', 'preact']
+                }
+            }
+        ]
+    },
+    resolve: {
+        extensions: [ '.js', '.jsx' ]
+    },
     externals: [nodeExternals()] // <-- Important
-  },
-  common
-);
-    
+};

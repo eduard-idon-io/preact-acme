@@ -5,7 +5,7 @@ const distRoot = path.resolve('public');
 
 module.exports = {
     plugins: [
-      new CleanWebpackPlugin(['dist']),
+      new CleanWebpackPlugin(['public']),
       new webpack.HotModuleReplacementPlugin()
     ],
     module: {

@@ -5,7 +5,7 @@ class Page extends Component {
       return (
         <html>
           <head>
-            <title>Pagina Principal</title>
+            <title>PreacJS Acme Server</title>
           </head>
           <body>
             <h1>Hola a todos desde el servidor</h1>
