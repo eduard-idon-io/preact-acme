@@ -24,8 +24,8 @@ module.exports = {
     },
     resolve: {
         alias: {
-            '~': resolve('app'),
-            '@': resolve('app/src')
+            '~': path.resolve('app'),
+            '@': path.resolve('app/src')
         },
         extensions: [ '.js', '.jsx' ]
     },
